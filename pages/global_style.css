@@ -1,0 +1,61 @@
+html{
+    background-color: #e7e5e5;
+}
+
+header{
+    text-align: center;
+}
+
+#top{
+    width: 100%;
+    height: 120px;
+}
+
+#logo{
+    height: 100px;
+    position: absolute;
+    top: 12px;
+    left: 50px;
+}
+
+#cabecalho{
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 120px;
+    right: 120px;
+    height: 120px;
+    padding: 35px;
+}
+
+body{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #707070;
+}
+
+input{
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    text-align: center;
+    outline: none;
+    margin: 15px auto;
+}
+
+.botao{
+    width: 150px;
+    padding: 10px 15px;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #527AC8;
+    border: none;
+    border-radius: 15px;
+    outline-style: none!important;
+  }
