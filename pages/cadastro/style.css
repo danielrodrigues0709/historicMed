@@ -11,10 +11,20 @@
 }
 
 #cadastrar{
-  margin-top: 50px;
+  float: unset;
+  margin-top: 350px;
   position: relative;
 }
 
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
 h2{
   padding: 15px;
 }
