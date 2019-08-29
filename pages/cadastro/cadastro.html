@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../global_style.css" media="all" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>HistoricMed</title>
+
+</head>
+
+<body>
+    <header>
+        <img id="top" src="../../img/topo páginas.png">
+        <span>
+            <img id="logo" src="../../img/logo-branca.png">
+        </span>
+        <div id="cabecalho">
+            <h1>Portal HistoricMed</h1>
+        </div>
+    </header>
+
+    <div>
+        <h2>Cadastro do Médico</h2>
+    </div>
+
+    <section>
+        <div id="esquerda">
+            <form>
+                <label>Nome Completo</label><br>
+
+                <input type="text" id="nome" value=""><br>
+
+                <label>CPF</label><br>
+
+                <input type="text" id="cpf" value=""><br>
+
+                <label>CRM</label><br>
+
+                <input type="text" id="crm" value=""><br>
+
+                <label>Especialidade</label><br>
+
+                <input type="text" id="especialidade" value="">
+            </form>
+        </div>
+
+        <div id="direita">
+            <form>
+                <label>Hospital</label><br>
+
+                <input type="text" id="hospital" value=""><br>
+
+                <label>E-mail</label><br>
+
+                <input type="email" id="email" value=""><br>
+
+                <label>Senha</label><br>
+
+                <input type="password" id="senha1" value=""><br>
+
+                <label>Confirme sua Senha</label><br>
+
+                <input type="password" id="senha2" value=""><br>
+
+            </form>
+            </form>
+        </div>
+
+    </section>
+
+    <section id="cadastrar">
+        <button class="botao" type="btn" onclick="cadastrar()">CADASTRAR</button>
+
+        <div class="modal fade" id="entrar">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">ATENÇÃO!</h4>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>Preencha os campos para continuar.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="botao" type="submit" data-dismiss="modal">Ok</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+#esquerda{
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+#direita{
+    float: right;
+    width: 50%;
+    position: relative;
+}
+
+#cadastrar{
+  margin-top: 50px;
+  position: relative;
+}
+
+h2{
+  padding: 15px;
+}
