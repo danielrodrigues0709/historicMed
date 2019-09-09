@@ -1,0 +1,20 @@
+#centro{
+    float: unset;
+    width: auto 80%;
+    position: relative;
+}
+
+label{
+    padding: 8px;
+}
+
+#alterar{    
+    margin-bottom: 20px;
+}
+
+#alterar{
+    width: 100%;
+    padding: 5px;
+    bottom: 0;
+    position: absolute;
+}

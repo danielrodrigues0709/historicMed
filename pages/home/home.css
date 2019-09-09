@@ -1,0 +1,22 @@
+#menu{
+    margin-top: 10%;
+}
+
+.opcoes{    
+    width: 300px;
+    height: 80px;
+    font-size: 20px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #527AC8;
+    border: none;
+    border-radius: 15px;
+    outline-style: none!important;
+    margin: 30px;
+}
+
+.botao{
+    position: relative;
+    margin-bottom: 50px;
+}

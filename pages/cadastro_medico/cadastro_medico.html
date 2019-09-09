@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../global_style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="cadastro_medico.css" media="all" />
+    <script type="text/javascript" src="cadastro_medico.js"></script>
+    
+    <link rel="icon" href="../../img/Logo_Header_Branca.png" type="image x-icon">
+    <title>HistoricMed - Cadastro Médico</title>
+
+</head>
+
+<body>
+    <header>
+        <img id="top" src="../../img/topo_paginas.png">
+        <span>
+            <img id="logo" src="../../img/Logo_Body_Branca.png">
+        </span>
+        <div id="cabecalho">
+            <h1>Portal HistoricMed</h1>
+        </div>
+    </header>
+
+    <div>
+        <h2>Cadastro do Médico</h2>
+    </div>
+
+    <section>
+        <div id="esquerda">
+            <label>Nome Completo</label><br>
+            <input type="text" id="nome" value="" required><br>
+
+            <label>CRM</label><br>
+            <input type="number" id="crm" value="" required><br>
+
+            <label>Especialidade</label><br>
+            <input type="text" id="especialidade" value="" required><br>
+
+            <label>UF</label>
+            <input list="uf" id="ufMedico" value="" required><br>
+            
+            <datalist id="uf">
+                <option value="AC"></option>
+                <option value="AL"></option>
+                <option value="AM"></option>
+                <option value="AP"></option>
+                <option value="BA"></option>
+                <option value="CE"></option>
+                <option value="DF"></option>
+                <option value="ES"></option>
+                <option value="GO"></option>
+                <option value="MA"></option>
+                <option value="MG"></option>
+                <option value="MS"></option>
+                <option value="MT"></option>
+                <option value="PA"></option>
+                <option value="PB"></option>
+                <option value="PE"></option>
+                <option value="PI"></option>
+                <option value="PR"></option>
+                <option value="RJ"></option>
+                <option value="RN"></option>
+                <option value="RS"></option>
+                <option value="RO"></option>
+                <option value="RR"></option>
+                <option value="SC"></option>
+                <option value="SE"></option>
+                <option value="SP"></option>
+                <option value="TO"></option>
+            </datalist>
+        </div>
+
+        <div id="direita">
+            <label>E-mail</label><br>
+            <input type="email" id="email" value=""><br>
+
+            <label>Senha</label><br>
+            <input type="password" id="senha1" value=""><br>
+
+            <label>Confirme sua Senha</label><br>
+            <input type="password" id="senha2" value=""><br>
+        </div>
+
+    </section>
+
+    <section id="cadastrar">
+        <button class="botao" type="btn" onclick="history.go(-1)">CANCELAR</button>
+        <button class="botao" type="btn" onclick="cadastrar()">CADASTRAR</button>
+
+        <div class="modal fade" id="entrar">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">ATENÇÃO!</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>Preencha os campos para continuar.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="botao" type="submit" data-dismiss="modal">OK</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="senhaInvalida">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                    <div class="modal-header">
+                        <h4 class="modal-title">ATENÇÃO!</h4>
+                    </div>
+        
+                    <div class="modal-body">
+                        <p>As senhas que você digitou são diferentes.</p>
+                    </div>
+        
+                    <div class="modal-footer">
+                        <button class="botao" type="submit" data-dismiss="modal">OK</button>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="sucesso">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                    <div class="modal-header">
+                        <h4 class="modal-title">Cadastro realizado com sucesso!</h4>
+                    </div>
+        
+                    <div class="modal-footer">
+                        <button class="botao" type="submit" onclick="history.go(-1)">OK</button>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="jaCadastrado">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                    <div class="modal-header">
+                        <h4 class="modal-title">Usuário já cadastrado!</h4>
+                    </div>
+        
+                    <div class="modal-footer">
+                        <button class="botao" type="submit" data-dismiss="modal">OK</button>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

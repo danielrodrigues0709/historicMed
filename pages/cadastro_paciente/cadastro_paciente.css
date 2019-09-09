@@ -1,0 +1,31 @@
+#esquerda{
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+#direita{
+    float: right;
+    width: 50%;
+    position: relative;
+}
+
+label{
+    padding: 8px;
+}
+
+#tipoSexo{
+    width: 100px;
+    margin-top: 20px;
+}
+
+#tipoSanguineo{
+    width: 100px;
+}
+
+#cadastrar{
+    width: 100%;
+    padding: 5px;
+    bottom: 0;
+    position: absolute;
+}

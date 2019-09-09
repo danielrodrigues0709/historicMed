@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/javascript" src="consulta.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../global_style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="consulta.css" media="all" />
+
+    <link rel="icon" href="../../img/Logo_Header_Branca.png" type="image x-icon">
+    <title>HistoricMed - Nova Consulta</title>
+</head>
+
+<body>
+    <header>
+        <img id="top" src="../../img/topo_paginas.png">
+        <span>
+            <img id="logo" src="../../img/Logo_Body_Branca.png">
+        </span>
+        <div id="cabecalho">
+            <h1>Portal HistoricMed</h1>
+        </div>
+    </header>
+
+    <div>
+        <h2>Nova Consulta</h2>
+    </div>
+
+    <div>
+        <section>
+            <label id="nome"> Nome do Paciente: </label>
+        </section>
+
+        <section>
+            <label id="cpf"> CPF: </label>
+        </section>
+
+        <section>
+            <label id="data"> Data da Consulta: </label>
+        </section>
+    </div>
+
+    <div class="fields">
+        <label> Sintomas</label>
+        <textarea name="" id="sintomas"></textarea>
+    </div>
+
+    <div class="fields">
+        <label> Anotações</label>
+        <textarea name="" id="anotacoes"></textarea>
+    </div>
+
+    <div class="fields">
+        <label> Exames Solicitados</label>
+        <textarea name="" id="exames"></textarea>
+    </div>
+
+    <div class="fields">
+        <label> Medicamentos Indicados</label>
+        <textarea name="" id="medicamentos"></textarea>
+    </div>
+
+    <div id="rodape">
+        <button class="botao" type="btn" onclick="history.go(-1)">CANCELAR</button>
+        <button class="botao" type="submit" onclick="save()">SALVAR</button>
+
+        <div class="modal fade" id="sucesso">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                    <div class="modal-header">
+                        <h4 class="modal-title">Cadastro realizado com sucesso!</h4>
+                    </div>
+        
+                    <div class="modal-footer">
+                        <button class="botao" type="submit" onclick="history.go(-1)">OK</button>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

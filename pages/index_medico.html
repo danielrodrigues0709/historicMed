@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script_medico.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="global_style.css" media="all" />
+
+    <link rel="icon" href="../img/Logo_Header_Branca.png" type="image x-icon">
+    <title>HistoricMed - Login</title>
+</head>
+
+<body>
+    <div id="imagem">
+        <img id="logo1" src="../img/Logo_Body_Branca.png">
+        <img src="../img/plano-fundo-home.png">
+    </div>
+
+    <div id="login">
+        <h1 id="titulo">SEJA BEM-VINDO</h1>
+        <p id="msg">Olá, digite o seu acesso para <br> identificarmos você em nosso sistema.</p>
+   
+    <ul>
+            <li>
+                <label>Usuário</label>
+                <input type="email" id="usuario" value="">
+            </li>
+
+            <br>
+
+            <li>
+                <label>Senha</label>
+                <input type="password" id="senha" value="">
+            </li>
+
+            <li>
+                <div id="opcoes">
+                    <button type="button" id="cadastrar"
+                        onclick="cadastrar()">Cadastre-se</button>
+
+                    <button type="button" id="recupSenha" data-toggle="modal" data-target="#popRecupSenha">Esqueci a
+                        senha</button>
+
+                    <div class="modal fade" id="popRecupSenha">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Insira seu e-mail para recuperação de senha.</h4>
+                                </div>
+
+                                <div class="modal-body">
+                                    <input type="email" value="" placeholder="Seu e-mail aqui." required>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="botao" type="submit" data-dismiss="modal">CANCELAR</button>
+                                    <button class="botao" type="submit" data-dismiss="modal">ENVIAR</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div>
+            <button class="botao" type="btn" onclick="submitForm()">ENTRAR</button>
+
+            <div class="modal fade" id="entrar">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+            
+                        <div class="modal-header">
+                            <h4 class="modal-title">ATENÇÃO!</h4>
+                        </div>
+            
+                        <div class="modal-body">
+                            <p>Preencha os campos para continuar.</p>
+                        </div>
+            
+                        <div class="modal-footer">
+                            <button class="botao" type="submit" data-dismiss="modal">OK</button>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>

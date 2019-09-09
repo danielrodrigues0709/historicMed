@@ -1,0 +1,39 @@
+section{
+    width: 33%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    text-align: center;
+    outline: none;
+}
+
+.texto{
+    width: 100%;
+    max-width: none;
+    height: 100px;
+}
+
+.fields{
+    text-align: left;
+    padding-left: 20px;
+    padding-left: 20px;
+}
+
+textarea{
+    width: 98%;
+    height: 100px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    text-align: left;
+    padding: 10px;
+    outline: none;
+}

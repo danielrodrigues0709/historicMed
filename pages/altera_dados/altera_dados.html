@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../global_style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="altera_dados.css" media="all" />
+
+    <script type="text/javascript" src="altera_dados.js"></script>
+
+    <link rel="icon" href="../../img/Logo_Header_Branca.png" type="image x-icon">
+    <title>HistoricMed - Alteração de Perfil</title>
+</head>
+
+<body>
+    <header>
+        <img id="top" src="../../img/topo_paginas.png">
+        <span>
+            <img id="logo" src="../../img/Logo_Body_Branca.png">
+        </span>
+        <div id="cabecalho">
+            <h1>Portal HistoricMed</h1>
+        </div>
+    </header>
+
+    <div>
+        <h2>Alteração de Perfil</h2>
+    </div>
+
+    <section>
+        <div id="centro">
+
+            <label>Telefone para contato</label><br>
+            <input type="tel" id="telefone" value="" required><br>
+
+            <label>E-mail</label><br>
+            <input type="email" id="email" value="" required><br>
+
+            <label>Senha</label><br>
+            <input type="password" id="senha1" value=""><br>
+
+            <label>Confirme sua Senha</label><br>
+            <input type="password" id="senha2" value=""><br>
+        </div>
+
+    </section>
+
+    <section id="alterar">
+        <button class="botao" type="btn" onclick="history.go(-1)">CANCELAR</button>
+        <button class="botao" type="btn" onclick="alterar()">ALTERAR</button>
+
+        <div class="modal fade" id="senhaInvalida">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                    <div class="modal-header">
+                        <h4 class="modal-title">ATENÇÃO!</h4>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+        
+                    <div class="modal-body">
+                        <p>As senhas que você digitou são diferentes.</p>
+                    </div>
+        
+                    <div class="modal-footer">
+                        <button class="botao" type="submit" data-dismiss="modal">Ok</button>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

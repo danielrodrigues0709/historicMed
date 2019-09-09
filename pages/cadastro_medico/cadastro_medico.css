@@ -1,0 +1,50 @@
+#esquerda{
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+#direita{
+    float: right;
+    width: 50%;
+    position: relative;
+}
+
+#ufMedico{
+    width: 100px;
+    text-align: center;
+    height: 30px;
+    right: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    text-align: center;
+    outline: none;
+}
+
+#cadastrar{
+  float: unset;
+  margin-top: 350px;
+  position: relative;
+}
+
+input{
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    text-align: center;
+    outline: none;
+    margin: 10px auto;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}

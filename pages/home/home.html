@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="home.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="home.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../global_style.css" media="all" />
+
+    <link rel="icon" href="../../img/Logo_Header_Branca.png" type="image x-icon">
+    <title>HistoricMed - Home</title>
+</head>
+
+<body>
+    <header>
+        <img id="top" src="../../img/topo_paginas.png">
+        <span>
+            <img id="logo" src="../../img/Logo_Body_Branca.png">
+        </span>
+
+        <div id="cabecalho">
+            <h1>Portal HistoricMed</h1>
+        </div>       
+
+        <div id="sair">
+            <button class="logoff" type="btn" onclick="window.location.href='../index.html'"><b>SAIR</b></button>
+        </div>
+    </header>
+
+    <div>
+        <h2>Escolha uma das opções abaixo:</h2>
+    </div>
+
+    <div id="menu">
+                <button class="opcoes" type="btn" onclick="novoPaciente()">Cadastrar Novo<br>Paciente</button>
+
+                <button class="opcoes" type="btn" onclick="historicoPacienteModal()">Visualizar Informações <br> do Paciente</button>
+
+                <button class="opcoes" type="btn" onclick="cadastraConsultaModal()">Cadastrar Nova<br>Consulta</button>
+    </div>
+
+    <div class="modal fade" id="procPaciente">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <h4 class="modal-title">Insira o CPF do paciente:</h4>
+                </div>
+    
+                <div class="modal-body">
+                    <input type="number" id="cpfp" value="" placeholder="CPF" required/>
+                </div>
+    
+                <div class="modal-footer">
+                    <button class="botao" data-dismiss="modal">CANCELAR</button>
+                    <button class="botao" type="submit" onclick="historicoPaciente()" data-dismiss="modal">CONSULTAR</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cadConsulta">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <h4 class="modal-title">Insira CPF do paciente:</h4>
+                </div>
+    
+                <div class="modal-body">
+                    <input type="number" id="cpfc" value="" placeholder="CPF" required/>
+                </div>
+    
+                <div class="modal-footer">
+                    <button class="botao" data-dismiss="modal">CANCELAR</button>
+                    <button class="botao" type="submit" onclick="cadastraConsulta()" data-dismiss="modal">CADASTRAR</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

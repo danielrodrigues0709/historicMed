@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="prontuario.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../global_style.css" media="all" />
+
+    <script type="text/javascript" src="prontuario.js"></script>
+    
+    <link rel="icon" href="../../img/Logo_Header_Branca.png" type="image x-icon">
+    <title>HistoricMed - Prontuário</title>
+</head>
+
+<body>
+    <header>
+        <img id="top" src="../../img/topo_paginas.png">
+        <span>
+            <img id="logo" src="../../img/Logo_Body_Branca.png">
+        </span>
+        <div id="cabecalho">
+            <h1>Portal HistoricMed</h1>
+        </div>
+    </header>
+
+    <div>
+        <h2>Prontuário</h2>
+    </div>
+
+    <div>
+        <section>
+            <label id="nome">Nome Completo: </label><br>
+        </section>
+
+        <section>
+            <label id="cpf"> CPF</label><br>
+        </section>
+
+        <section>
+            <label id="nascimento"> Data de Nascimento</label><br>
+        </section>
+    </div>
+
+    <div>
+        <section>
+            <label id="dt_consulta"> Data da Consulta</label><br>
+        </section>            
+
+        <section>
+            <label id="medico"> Médico Responsável</label><br>
+        </section>
+
+        <section>
+            <label id="especialidade"> Especialidade</label><br>
+        </section>
+    </div>
+
+    <div class="fields">
+        <label> Sintomas</label>
+        <textarea name="" id="campoTexto"></textarea>
+    </div>
+
+    <div class="fields">
+        <label> Anotações</label>
+        <textarea name="" id="campoTexto"></textarea>
+    </div>
+
+    <div class="fields">
+        <label> Exames Solicitados</label>
+        <textarea name="" id="campoTexto"></textarea>
+    </div>
+
+    <div class="fields">
+        <label> Medicamentos Indicados</label>
+        <textarea name="" id="campoTexto" ></textarea>
+    </div>
+
+    <div id="rodape">
+        <button class="botao" type="btn" onclick="history.go(-1)"" >CANCELAR</button>
+        <button class="botao" type="btn" onclick="salvar()">SALVAR</button>
+    </div>
+
+</body>
+
+</html>
